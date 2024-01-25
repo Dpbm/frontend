@@ -30,6 +30,12 @@ to build run:
 npm install && npm run build
 ```
 
+then run the project with:
+
+```bash
+npm run start
+```
+
 ## access
 
 With all done, you can access: `localhost:3000` and use the application.
