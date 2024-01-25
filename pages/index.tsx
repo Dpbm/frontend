@@ -20,6 +20,7 @@ import sendFiles from "../utils/sendFiles";
 import { RingLoader } from "react-spinners";
 import MimeTypes from 'mime-types';
 import { useRouter } from "next/dist/client/router";
+import GITHUB_USER_IMAGE from "../utils/constants"
 
 export default function Home(){
   const [files, setFiles] = useState<any>([]);
@@ -125,7 +126,7 @@ export default function Home(){
             Made by{' '} 
             <FooterLink href={process.env.NEXT_PUBLIC_GITHUB}>
               DPBM
-              <FooterImageAvatar src={process.env.NEXT_PUBLIC_GITHUB_AVATAR} alt="Dpbm Avatar"/> 
+              <FooterImageAvatar src={GITHUB_USER_IMAGE} alt="Dpbm Avatar"/> 
             </FooterLink>
           </FooterText>
       </Footer>
